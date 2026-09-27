@@ -1,0 +1,22 @@
+/* Support pages share the showcase's type and palette. */
+.help-page .site-header{gap:24px;flex-wrap:wrap}
+.help-page .legal-nav{display:flex;flex-wrap:wrap;gap:8px 24px}
+.help-page .legal-nav a{display:inline-flex;min-height:44px;align-items:center;font-size:15px}
+.help-content{max-width:860px;margin:36px auto 80px}
+.help-content h1{font-size:clamp(42px,7vw,72px);letter-spacing:-.035em;line-height:1.06;margin:0 0 24px}
+.help-intro{font-size:clamp(20px,3vw,24px);line-height:1.5;max-width:640px;margin:0 0 28px}
+.help-content section{margin:42px 0 0;padding:0}
+.help-content h2{font-size:26px;line-height:1.2;letter-spacing:-.02em;margin:0 0 14px}
+.help-content p,.help-content li{max-width:70ch;line-height:1.7}
+.help-content li{margin:12px 0}
+.help-content ul{padding-left:23px}
+.help-content a:not(.button){color:var(--green);text-underline-offset:4px;overflow-wrap:anywhere}
+.help-note,.contact-address{color:var(--muted);font-size:15px;line-height:1.7}
+.help-note{margin-top:36px}
+.help-links{border-top:1px solid var(--line)}
+.help-links a{display:flex;justify-content:space-between;gap:24px;align-items:center;min-height:64px;border-bottom:1px solid var(--line);text-decoration:none}
+.help-content .button{white-space:normal;text-align:center;max-width:100%}
+.help-page footer{flex-wrap:wrap;gap:20px}
+.footer-links{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}
+footer .footer-links a{min-height:44px;display:inline-flex;align-items:center;font-size:13px}
+@media(max-width:560px){.help-page .site-header{padding-top:20px;padding-bottom:12px;gap:12px}.help-page .legal-nav{width:100%;gap:8px 22px}.help-page .legal-nav a{font-size:14px}.help-content{margin-top:30px;margin-bottom:52px}.help-content section{margin-top:32px}.help-content h2{font-size:25px}.help-content .button{font-size:16px}.help-page footer p{order:initial;width:auto}.help-page footer>a:last-child{font-size:14px}}
