@@ -1,16 +1,121 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f3f6f2"><meta name="description" content="NutriGo — a considered space for food, everyday progress and the people you choose."><title>NutriGo — Your food. Your rhythm.</title><link rel="icon" href="assets/app-icon.png"><link rel="stylesheet" href="style.css"></head>
-<body><a class="skip" href="#screens">Skip to app screens</a><header><a class="brand" href="#"><img src="assets/app-icon.png" alt="" width="38" height="38">NutriGo<span class="badge">Preview</span></a><nav aria-label="Main navigation"><a href="#screens">Inside the app</a><a href="#care">Built with care</a><a class="repo" href="https://github.com/yeegz/nutrigo-showcase">View on GitHub ↗</a></nav></header>
-<main><section class="hero"><div class="hero-copy"><p class="eyebrow">YOUR FOOD. YOUR RHYTHM.</p><h1>A little clarity.<br><span>Every day.</span></h1><p class="intro">Food, progress, and a little company along the way. A calmer place to build your routine.</p><a class="button" href="#screens">Take a look <span aria-hidden="true">↓</span></a><p class="caption">iOS & Android · In development</p></div><div class="hero-art"><div class="halo"></div><img class="phone behind" src="screenshots/log-light.png?v=20260927" alt="NutriGo Log in light mode, with meals and nutrition"><img class="phone front" src="screenshots/today-dark.png?v=20260927" alt="NutriGo Today, showing a calorie progress ring and macros"></div></section>
-<div class="principles"><span>01 <strong>Understand your day</strong></span><span>02 <strong>Make the next meal easier</strong></span><span>03 <strong>Build your own rhythm</strong></span></div>
-<section id="screens" class="screens"><div class="section-heading"><div><p class="eyebrow">THE EVERYDAY DETAILS</p><h2>Made to feel<br>like one app.</h2></div><div class="appearance" role="group" aria-label="Screenshot appearance"><button data-theme="dark" aria-pressed="true">Dark</button><button data-theme="light" aria-pressed="false">Light</button></div></div><div class="gallery">
-<article><div class="screen-frame"><img data-screen="today" src="screenshots/today-dark.png?v=20260927" loading="lazy" alt="Today nutrition overview"></div><p class="number">01 / TODAY</p><h3>The big picture,<br> at a glance.</h3><p>Calorie progress, macros, water, and what you’ve logged. One clear starting point.</p></article>
-<article><div class="screen-frame"><img data-screen="log" src="screenshots/log-dark.png?v=20260927" loading="lazy" alt="Food log with editable entries"></div><p class="number">02 / LOG</p><h3>Your meals.<br> Always editable.</h3><p>Useful food details, portions that make sense, and room to correct an entry.</p></article>
-<article><div class="screen-frame"><img data-screen="progress" src="screenshots/progress-dark.png?v=20260927" loading="lazy" alt="Progress tracker, streak and weight chart"></div><p class="number">03 / PROGRESS</p><h3>See your routine<br> take shape.</h3><p>A tracker based on actual logs, connected weigh-ins, and a weekly check-in.</p></article>
-</div></section>
-<section class="meals-section"><div><p class="eyebrow">FROM THE FRIDGE TO THE TABLE</p><h2>What’s for dinner?<br>Start with what<br>you have.</h2><p class="intro small">Published recipes meet your fridge. See what matches, what’s missing, and the source behind the suggestion.</p><div class="fact"><strong>233</strong><span>published recipes in the<br>current development catalogue</span></div><p class="caption">MedlinePlus / National Library of Medicine.<br>Weekly refresh implementation with a saved fallback.</p></div><img class="phone" src="screenshots/meal-suggestions-dark.png?v=20260927" loading="lazy" alt="Source-attributed meal suggestions with matching fridge ingredients"></section>
-<section class="social-section"><div class="section-heading"><div><p class="eyebrow">A LITTLE COMPANY</p><h2>Your people.<br>Your pace.</h2></div><p>Share meals and moments with chosen friends. Keep your health overview private and your profile focused.</p></div><div class="social-screens"><img class="phone" data-screen="community" src="screenshots/community-dark.png?v=20260927" loading="lazy" alt="Private community feed"><img class="phone" data-screen="profile" src="screenshots/profile-dark.png?v=20260927" loading="lazy" alt="A simplified personal profile"></div></section>
-<section id="care" class="care"><p class="eyebrow">BUILT WITH CARE</p><h2>Details that earn<br>their place.</h2><div class="care-grid"><article><span>↗</span><h3>Know the source</h3><p>Live food search, published recipe references, and honest labels when nutrition is unavailable.</p></article><article><span>◒</span><h3>Choose your amount</h3><p>Source-specific household portions, fractional quantities, and nutrition that updates with them.</p></article><article><span>✦</span><h3>Make it yours</h3><p>Light and dark appearances, scalable text, optional haptics and reduced-motion support.</p></article><article><span>↔</span><h3>Stay connected</h3><p>Account-bound sync and optional health integrations, with private controls over sharing.</p></article></div></section>
-<section class="widgets-section"><p class="eyebrow">OUTSIDE THE APP</p><h2>A useful glance.<br>A quicker start.</h2><div class="widget-gallery"><figure><img src="screenshots/widgets/summary.png?v=20260927" alt="Daily nutrition widget with target progress and quick water" loading="lazy"><figcaption>Your daily summary</figcaption></figure><figure><img src="screenshots/widgets/quick.png?v=20260927" alt="Quick logging widget with food, barcode and water shortcuts" loading="lazy"><figcaption>Shortcuts to logging</figcaption></figure></div><p class="caption">Native Android widget renders from QA tests. iOS has dedicated Home and Lock Screen layouts.<br>Android Lock Screen support varies by device. Physical host validation remains pending.</p></section><section class="preview-note"><h3>A working development preview.</h3><p>These are actual Android emulator captures using a synthetic account. iOS uses native navigation materials. The app is not yet a store release. Physical-device health sync, push delivery, production sign-in and wider restaurant coverage still require provider and release validation.</p><a href="SCREENSHOTS.md">Screenshot provenance ↗</a></section></main>
-<footer><a class="brand" href="#"><img src="assets/app-icon.png" width="32" height="32" alt="">NutriGo</a><p>© 2026 NutriGo · Your food. Your rhythm.</p><a href="LICENSE.md">Credits & rights</a></footer>
-<script>document.querySelectorAll('[data-theme]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('[data-screen]').forEach(img=>img.src=`screenshots/${img.dataset.screen}-${button.dataset.theme}.png?v=20260927`)}));</script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6f2">
+  <meta name="description" content="Meet NutriGo. Food logging, meal ideas and everyday progress, with room to build your own routine.">
+  <title>NutriGo — Your food. Your rhythm.</title>
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="style.css?v=20260927-5">
+  <script src="script.js?v=20260927-5" defer></script>
+</head>
+<body>
+  <a class="skip" href="#screens">Skip to app screens</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="NutriGo home">
+      <img src="assets/app-icon.png" alt="" width="38" height="38">NutriGo
+      <span class="badge">Preview</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#screens">Inside the app</a>
+      <a href="#widgets">Widgets</a>
+      <a class="repo" href="https://github.com/yeegz/nutrigo-showcase">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Your food.<br>Your rhythm.</h1>
+        <p class="intro">Food, water, and everyday progress.<br>A little more clarity, all in one place.</p>
+        <a class="button" href="#screens">Explore the app <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></a>
+        <p class="caption">For iOS and Android · In development</p>
+      </div>
+      <div class="hero-art">
+        <img class="phone behind" src="screenshots/log-light.png?v=20260927" width="1080" height="1920" alt="NutriGo Log in light mode, showing meals and nutrition">
+        <img class="phone front" src="screenshots/today-dark.png?v=20260927" width="1080" height="1920" alt="NutriGo Today in dark mode, showing calorie progress, macros and water" fetchpriority="high">
+      </div>
+    </section>
+
+    <section id="screens" class="screens" aria-labelledby="screens-title">
+      <div class="section-heading">
+        <h2 id="screens-title">A day in NutriGo.</h2>
+        <div class="appearance" role="group" aria-label="Screenshot appearance" hidden>
+          <button type="button" data-theme="dark" aria-pressed="true">Dark</button>
+          <button type="button" data-theme="light" aria-pressed="false">Light</button>
+        </div>
+      </div>
+      <div class="screen-tabs" role="tablist" aria-label="App screens" hidden>
+        <button type="button" id="tab-today" role="tab" aria-controls="screen-panel" aria-selected="true" data-screen="today">Today</button>
+        <button type="button" id="tab-log" role="tab" aria-controls="screen-panel" aria-selected="false" tabindex="-1" data-screen="log">Log</button>
+        <button type="button" id="tab-meals" role="tab" aria-controls="screen-panel" aria-selected="false" tabindex="-1" data-screen="meals">Meals</button>
+        <button type="button" id="tab-progress" role="tab" aria-controls="screen-panel" aria-selected="false" tabindex="-1" data-screen="progress">Progress</button>
+        <button type="button" id="tab-community" role="tab" aria-controls="screen-panel" aria-selected="false" tabindex="-1" data-screen="community">Community</button>
+        <button type="button" id="tab-profile" role="tab" aria-controls="screen-panel" aria-selected="false" tabindex="-1" data-screen="profile">Profile</button>
+      </div>
+      <div id="screen-panel" class="screen-panel">
+        <div class="screen-stage">
+          <a class="screen-preview" href="screenshots/today-dark.png?v=20260927" aria-label="Enlarge Today screenshot">
+            <img id="screen-image" class="phone" src="screenshots/today-dark.png?v=20260927" width="1080" height="1920" loading="lazy" alt="Today overview with a calorie ring, macros, water and recent meals">
+            <span class="enlarge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m0-5 7 7m6 11h5v-5m0 5-7-7"/></svg>Enlarge screen</span>
+          </a>
+        </div>
+        <div class="screen-copy">
+          <h3 id="screen-title">Your day, <br>at a glance.</h3>
+          <p id="screen-description">Calories, macros, water, and your latest meals. A clear place to start.</p>
+          <a id="screen-detail" class="text-link" href="screenshots/food-search-dark.png?v=20260927" data-title="Food search">Explore food search <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <p class="screen-caption">Actual app screens · Sample account</p>
+        </div>
+      </div>
+      <p id="screen-status" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="widgets" class="widgets-section" aria-labelledby="widgets-title">
+      <div class="widget-heading">
+        <h2 id="widgets-title">A shortcut<br>to your day.</h2>
+        <p>Check your progress. <br>Jump straight to logging.</p>
+      </div>
+      <div class="widget-gallery">
+        <figure>
+          <a class="widget-preview" href="screenshots/widgets/summary.png?v=20260927" data-title="Daily summary widget" aria-label="Enlarge daily summary widget">
+            <img src="screenshots/widgets/summary.png?v=20260927" width="320" height="250" loading="lazy" alt="Daily summary widget with nutrition progress and a quick water action">
+          </a>
+          <figcaption>Your daily summary</figcaption>
+        </figure>
+        <figure>
+          <a class="widget-preview" href="screenshots/widgets/quick.png?v=20260927" data-title="Quick logging widget" aria-label="Enlarge quick logging widget">
+            <img src="screenshots/widgets/quick.png?v=20260927" width="320" height="250" loading="lazy" alt="Quick logging widget with food, barcode and water shortcuts">
+          </a>
+          <figcaption>A quicker way to log</figcaption>
+        </figure>
+      </div>
+      <p class="widget-caption">Android widget previews. Home and Lock Screen availability varies by platform.</p>
+    </section>
+
+    <details class="preview-note">
+      <summary>About this preview <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div>
+        <p>NutriGo is in development, not yet a store release. The screens above are real Android emulator captures with a synthetic account. Widget images are native Android test renders; physical Home and Lock Screen checks are still pending.</p>
+        <p>Production sign-in, physical-device health sync, push delivery, and wider restaurant coverage still need release validation. Food search uses USDA, and published recipes come from MedlinePlus.</p>
+        <a href="SCREENSHOTS.md">Screenshot sources and iOS capture details</a>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <a class="brand" href="#" aria-label="NutriGo home"><img src="assets/app-icon.png" width="32" height="32" alt="">NutriGo</a>
+    <p>© 2026 NutriGo</p>
+    <a href="LICENSE.md">Credits & rights</a>
+  </footer>
+
+  <dialog id="screen-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-caption">
+    <div class="dialog-header">
+      <h2 id="dialog-title">Today</h2>
+      <button type="button" class="close-dialog" aria-label="Close screenshot" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="dialog-body"><img id="dialog-image" alt=""></div>
+    <p id="dialog-caption">Actual app screen with sample data.</p>
+  </dialog>
+</body>
+</html>
